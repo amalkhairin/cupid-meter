@@ -30,7 +30,7 @@ export const metadata: Metadata = {
   twitter: {
     card: 'summary_large_image',
     site: 'Cupid Meter',
-    title: "Cupid Meter',",
+    title: "Cupid Meter",
     description: "Cek tingkat kecocokan cintamu dengan crush atau pasanganmu",
     creator: 'Cupid Meter',
     images: {
