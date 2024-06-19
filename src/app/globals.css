@@ -1,0 +1,249 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: url('/bg.png'), #1E1E20 !important;
+  background-repeat: no-repeat !important;
+  background-position: top !important;
+  background-size: cover !important;
+}
+
+
+input[type="text"]::-moz-color-swatch {
+  border: none;
+}
+
+input[type="color"]::-webkit-color-swatch-wrapper {
+  border-radius: 0;
+}
+
+input[type="color"]::-webkit-color-swatch {
+  border: none;
+}
+
+input[type="text"]:focus {
+  outline: none !important;
+}
+
+input[type="text"]:focus {
+  outline: none !important;
+}
+
+
+.custom-input-text {
+  width: 100% !important;
+  padding: 10px 20px !important;
+  background: #d9d9d958 !important;
+  color: #FFFFFF !important;
+  border: 1px solid #cecece !important;
+  text-align: center !important;
+  border-radius: 200px !important;
+}
+
+.title {
+  filter: drop-shadow(0px 0px 4px #ff55886f) !important;
+}
+
+#btn-check {
+  filter: drop-shadow(0px 0px 6px #ff55886f) !important;
+}
+
+.loading {
+  filter: drop-shadow(0px 0px 6px #ff55886f) !important;
+}
+
+.result-text {
+  filter: drop-shadow(0px 0px 6px #ff55886f) !important;
+}
+
+.loading {
+  /*background: #fcfcfc;*/
+  margin: auto;
+  border-radius: 10px;
+  height: 75px;
+  width: 75px;
+  float: center;
+}
+
+.loading:before {
+  content: "";
+  position: absolute;
+  background: #FFFFFF;
+  height: 40px;
+  width: 40px;
+  z-index: 0;
+  margin-top: 15px;
+  margin-left: 15px;
+  transform: rotate(45deg);
+}
+
+.loading .circle1 {
+  content: "";
+  position: absolute;
+  background: #FFFFFF;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  border-radius: 50%;
+  animation-duration: 2s;
+  animation-name: change1;
+  animation-iteration-count: infinite;
+  /*animation-direction: alternate;*/
+}
+
+.loading .circle2 {
+  content: "";
+  position: absolute;
+  background: #FFFFFF;
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  margin-left: 30px;
+  border-radius: 50%;
+  animation-duration: 2s;
+  animation-name: change2;
+  animation-iteration-count: infinite;
+  /*animation-direction: alternate;*/
+}
+
+@keyframes change1 {
+  0%,
+  25% {
+      margin-top: 0px;
+      margin-left: 0px;
+  }
+  50%,
+  75% {
+      margin-top: 30px;
+      margin-left: 30px;
+  }
+}
+
+@keyframes change2 {
+  25%,
+  50% {
+      margin-top: 30px;
+      margin-left: 0px;
+  }
+  75%,
+  100% {
+      margin-top: 0px;
+      margin-left: 30px;
+  }
+}
+
+
+.love-shape {
+  /*background: #fcfcfc;*/
+  margin: auto;
+  border-radius: 10px;
+  height: 75px;
+  width: 75px;
+  float: center;
+  animation: pulsate-fwd 0.7s ease-in-out infinite both;
+  filter: drop-shadow(0px 0px 6px #ff55886f) !important;
+}
+
+.love-shape:before {
+  content: "";
+  position: absolute;
+  background: var(--love-color);
+  height: 40px;
+  width: 40px;
+  z-index: 0;
+  margin-top: 15px;
+  margin-left: 15px;
+  transform: rotate(45deg);
+}
+
+.love-shape .circle1 {
+  content: "";
+  position: absolute;
+  background: var(--love-color);
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.love-shape .circle2 {
+  content: "";
+  position: absolute;
+  background: var(--love-color);
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  margin-left: 30px;
+  border-radius: 50%;
+}
+
+@keyframes pulsate-fwd {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+
+
+.love-shape-back {
+  /*background: #fcfcfc;*/
+  margin: auto;
+  border-radius: 10px;
+  height: 75px;
+  width: 75px;
+  position: absolute;
+  z-index: -1;
+  filter: drop-shadow(0px 0px 6px #ff55886f) !important;
+  animation: fade-out 0.7s ease-in-out infinite 0.5s both;
+}
+
+@keyframes fade-out {
+  from {
+    opacity: 1;
+    transform: scale(0);
+  }
+  to {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+.love-shape-back:before {
+  content: "";
+  position: absolute;
+  background: var(--love-color);
+  height: 40px;
+  width: 40px;
+  z-index: 0;
+  margin-top: 15px;
+  margin-left: 15px;
+  transform: rotate(45deg);
+}
+
+.love-shape-back .circle1 {
+  content: "";
+  position: absolute;
+  background: var(--love-color);
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  border-radius: 50%;
+}
+
+.love-shape-back .circle2 {
+  content: "";
+  position: absolute;
+  background: var(--love-color);
+  height: 40px;
+  width: 40px;
+  z-index: 1;
+  margin-left: 30px;
+  border-radius: 50%;
+}
