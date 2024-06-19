@@ -5,7 +5,6 @@ import "./globals.css";
 const poppins = Poppins({ subsets: ["latin"], weight: ["300", "400", "500", "600", "700", "800"] });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(`${process.env.HOST_APP_URL}`),
   title: 'Cupid Meter',
   description: 'Cek tingkat kecocokan cintamu dengan crush atau pasanganmu',
   keywords: ['Cupid', 'Meter', 'Calculator', 'Love'],
